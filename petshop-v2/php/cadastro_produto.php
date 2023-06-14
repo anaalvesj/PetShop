@@ -21,7 +21,7 @@
         $produto->cadastrar($nomeProduto,$descProduto,$pesoProduto,$valorProduto,
         $imagem,$categoria,$porte,$fabricante,$especie,$idade);
         echo "<script>alert('Cadastro realizado')</script>";
-        header("Location:../adicionarProduto.php");        
+        header("Location:../indexAdmin.php");        
 
     } catch (PDOException $e){
         echo ("Erro: ".$e->getMessage());

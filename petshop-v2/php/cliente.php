@@ -14,5 +14,22 @@
             WHERE idCliente = $id";
             $conexao->exec($queryInsert);
         }
+
+        public function editar($id,$nome,$telefone,$email,$cep,$endereco,$numero,$bairro,$cidade,$estado){
+            $conexao = Conexao::conectar();
+            $queryUpdate = "UPDATE tbCliente
+                SET nomeCliente = $nome,
+                SET telefoneCliente = $telefone,
+                SET emailLogin = $email,
+                SET cep = $cep,
+                SET endereco = $endereco,
+                SET numero = $numero,
+                SET bairro = $bairro,
+                SET cidade = $cidade,
+                SET estado = $estado,
+                WHERE idCliente = $id";
+           
+            $conexao->exec($queryUpdate);
+        }
     }
 ?>

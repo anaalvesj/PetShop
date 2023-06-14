@@ -89,7 +89,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="adicionarProduto.php">Cadastrar</a></li>
-                            <li><a class="dropdown-item" href="editar.produto.php">Editar</a></li>
+                            <li><a class="dropdown-item" href="#.php">Editar</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -171,7 +171,9 @@
                 <div class="product-image">
                 <img src="./src/<?php echo $coluna['imagem'];?>" class="product-thumb"
                         alt="<?php echo $coluna['nomeProduto'];?>">
+                        <a href='./php/updateCategoria.php?id=$coluna[idProduto]'></a>
                     <button class="card-btn">Editar</button>
+                    </a>
                 </div>
                 <div class="product-info">
                     <h6 class="product-brand"><?php echo $coluna['nomeProduto'];?></h6>

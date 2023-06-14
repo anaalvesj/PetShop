@@ -149,6 +149,7 @@
             <section>
 
                 <table class="prodDesc">
+                    
                     <thead class="cabeDesc">
 
                         <tr>
@@ -174,8 +175,7 @@
 
                     <tbody>
                         <tr>
-
-                            <td class="preco">R$<?php echo $valor?></td>
+                            <td class="preco" style="">R$<?php echo $valor?></td>
                         </tr>
                     </tbody>
                 </table>

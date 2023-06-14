@@ -108,7 +108,7 @@
 <body>
 
     <div class="form">
-        <form onsubmit="validarFormulario(event)">
+        <form method="POST" action="./php/editarDados.php">
             <?php
                 $usuarioAtivo = $_SESSION['idUsuario'];
                 $conexao = Conexao::conectar();
@@ -174,25 +174,25 @@
             <div class="input-group">
                 <div class="input-box">
                     <label for="number">Nome</label>
-                    <input id="number" type="tel" name="number" placeholder="Nome Completo" value="<?php echo $nome?>" required >
+                    <input id="number" type="text" name="nome" placeholder="Nome Completo" value="<?php echo $nome?>" required >
                         
                 </div>
 
                 <div class="input-box">
                     <label for="antemail">Celular</label>
-                    <input id="antemail" type="email" name="antemail" placeholder="(xx)xxxxx-xxxx" value="<?php echo $telefone?>" required
+                    <input id="antemail" type="tel" name="number" placeholder="(xx)xxxxx-xxxx" value="<?php echo $telefone?>" required
                     oninput="mascaraCelular(event)">
                 </div>
 
                 <div class="input-box">
                     <label for="confirmaremail">E-mail</label>
-                    <input id="confirmaremail" type="email" name="confirmaremail" placeholder="xxxx@xxx.xxx" value="<?php echo $email?>"
+                    <input id="confirmaremail" type="email" name="email" placeholder="xxxx@xxx.xxx" value="<?php echo $email?>"
                         required>
                 </div>
             </div>
 
             <div class="continue-button">
-                <button type="submit" class="btn-login">Atualizar</button>
+                <button type="submit"  class="btn-login">Atualizar</button>
             </div>
             <?php
                 

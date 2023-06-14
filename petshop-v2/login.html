@@ -12,8 +12,9 @@
 
     <link rel="stylesheet" href="./css/stylelogin.css">
 
-    <!--<script>
-        function fazerLogin() {
+    <script>
+        function fazerLogin(event) {
+            event.preventDefault();
             var usuario = document.getElementsByName('usuario')[0].value;
             var senha = document.getElementsByName('senha')[0].value;
 
@@ -28,7 +29,6 @@
             }
         }
     </script>
--->
 </head>
 
 <body>
@@ -38,9 +38,9 @@
         </div>
         <div class="right-login">
             <div class="card-login">
-                <form method="POST" action="./php/validarLogin.php">
-                    <h1>LOGIN</h1>
                 
+                    <h1>LOGIN</h1>
+                    <form class="formulario" method="POST" action="./php/validarLogin.php" style="width: 100%;">
                     <div class="textfield">
                         <label for="usuario">Usuário</label>
                         <input type="text" name="email" maxlength="30" placeholder="Usuário">
@@ -49,7 +49,20 @@
                         <label for="senha">Senha</label>
                         <input type="password" name="senha" maxlength="20" placeholder="Senha">
                     </div>
-                    <button class="btn-login">Login</button>
+                    <button type="submit" onclick="fazerlogin(event)" 
+                    style="width: 100%;
+                    margin-top:10px;
+                    padding: 16px 0px;
+                    border: none;
+                    border-radius: 8px;
+                    outline: none;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    letter-spacing: 3px;
+                    color: #fff;
+                    background: #6c63ff;
+                    cursor: pointer;
+                    box-shadow: 0px 10px 40px -12px black;">Login</button>
                 </form>
                 <button class="btn-login" onclick="window.location.href = 'cadastro.html'">Cadastre-se</button>
             </div>

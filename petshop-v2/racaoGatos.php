@@ -172,14 +172,14 @@
 
         <!--INICIO PRODUTOS-->
         <section class="produtos">
-
+        <div class="product-container">
         <?php
             $conexao = Conexao::conectar();
             $consulta=$conexao->query("SELECT * FROM tbproduto WHERE idEspecie = 2 && idCategoriaProduto = 1");
 
            while ($coluna = $consulta->fetch(PDO::FETCH_ASSOC)) {
         ?>                  
-            <div class="product-container">
+            
                 <div class="product-card">
                     <div class="product-image">
                      <img src="./src/<?php echo $coluna['imagem']?>" class="product-thumb"

@@ -45,9 +45,9 @@
                         </li>
                         
                         <li class="nav-item">
-                            <a href="login.html" rel="" class="nav-link">
+                            <a href="meusDados.php" rel="" class="nav-link">
                                 <i class="fa-solid fa-user"></i>
-                                <span class="visuallyhidden">Entrar</span>
+                                <span class="visuallyhidden">Meus Dados</span>
                             </a>
                         </li>
                         <li class="nav-item">

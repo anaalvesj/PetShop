@@ -43,13 +43,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicío</a>
+                            <a class="nav-link active" aria-current="page" href="index.php">Inicío</a>
                         </li>
                         
                         <li class="nav-item">
-                            <a href="login.html" rel="" class="nav-link">
+                            <a href="meusDados.php" rel="" class="nav-link">
                                 <i class="fa-solid fa-user"></i>
-                                <span class="visuallyhidden">Entrar</span>
+                                <span class="visuallyhidden">Meus Dados</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -161,7 +161,13 @@
         <!--FIM MENU ITENS A SEREM VENDIDOS-->
 
         <!--INICIO PRODUTOS-->
-        <?php
+       
+       <section class="produtos">
+
+            <h5 class="produtosracao">Ração para Cachorro</h5>
+            <div class="product-container">
+
+            <?php
             $conexao = Conexao::conectar();
             $consulta=$conexao->query("SELECT * FROM tbproduto WHERE idEspecie = 1 && idCategoriaProduto = 1");
 
@@ -169,9 +175,8 @@
         
         ?>
 
-        <section class="produtos">
-            <h5 class="produtosracao">Ração para Cachorro</h5>
-            <div class="product-container">
+        
+            
                 <div class="product-card">
                 <div class="product-image">
                     
@@ -187,12 +192,13 @@
                         <span class="price"><?php echo $coluna['valorProduto'] ?></span>
                     </div>
                 </div>
+                <?php
+        }
+    ?>
             </div>
         </section>
 
-    <?php
-        }
-    ?>
+   
 
     <!--FIM PRODUTOS-->
 

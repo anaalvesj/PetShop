@@ -1,6 +1,7 @@
 .image {
     width: 30%;
     max-height: 100%;
+    margin-left: 5%;
 
 }
 
@@ -16,7 +17,7 @@
 }
 
 .btnAddCart {
-    padding: 30px 50px;
+    padding: 25px 10px;
     display: flex;
     justify-content: flex-end;
     cursor: pointer;
@@ -26,7 +27,7 @@
     border-radius: 10px;
     text-align: center;
     margin-top: 0.5%;
-    margin-left: 35%;
+    margin-left: 42%;
     margin-right: 35%;
     margin-bottom: 2%;
 }
@@ -37,7 +38,8 @@
 
 table {
     margin-top: 5%;
-    max-width: 925px;
+    margin-left:10%;
+    max-width: 600px;
     font-size: 20px;
 
 }
@@ -86,6 +88,6 @@ tbody {
         text-align: center;
         font-family: 'Courier New', Courier, monospace;
         margin-right: 35%;
-        margin-left: 40%;
+        
     }
 }
